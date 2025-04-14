@@ -1,0 +1,75 @@
+SAMPLE CODE
+
+HTML:
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking ticket platform</title>
+</head>
+<body>
+    <header>
+        <h1>EVENT AND TRAVEL CONNECT</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><button onclick="showSection('home')">Home</button></li>
+                <li><button onclick="showSection('registration')">Registration</button></li>
+                <li><button onclick="showSection('events')">Event</button></li>
+                <li><button onclick="showSection('aboutus')">AboutUs</button></li>
+                <li><button onclick="showSection('contact')">Contact</button></li>
+            </ul>
+        </nav>
+ <main>
+   <section id="home" class="active">
+             <p><b>WELCOME TO OUR BOOKING TICKET PLATFORM!</b><br>Welcome to our comprehensive booking ticket platform, where you can effortlessly secure tickets for a wide range of events. Whether you're looking forward to attending a thrilling concert, catching the latest blockbuster movie, planning your next travel adventure by flight or train, our platform offers you a seamless booking experience. Browse through our curated selection of events and book your tickets hassle-free.
+  </p>
+</section>
+            <section id="registration">
+            <h2>Registration</h2>
+            <form action="/book_ticket" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your email" required>
+                <label for="event">Select event:</label>
+                <select id="event" name="event">
+                    <option value="concert">Concert</option>
+                    <option value="movie">Movie</option>
+                    <option value="bus">Bus</option>
+                    <option value="flight">Flight</option>
+                    <option value="train">Train</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <input type="submit" value="Book Tickets">
+            </form>
+            <div class="success-message" style="display:none;">
+                <h2>Booking Successful!</h2>
+                <p>Your tickets have been booked successfully.You will receive a confirmation email shortly.</p>
+                </div>
+        </section>
+        <section id="events">
+            <h2>Events</h2>
+            <p><b>Explore Exciting Events!!!</b><br>
+                Discover and explore our upcoming events! From electrifying concerts featuring your favorite artists to highly anticipated movie premieres, we have something for everyone. Stay updated with our event calendar and ensure you don't miss out on any exciting opportunities. Booking your tickets is easy and secure, making your event planning stress-free.
+           </p>
+      </section>
+        <section id="aboutus">
+            <h2>AboutUs</h2>
+            <p>At <b>EVENT AND TRAVEL CONNECT</b>, we are committed to revolutionizing the ticket booking experience. Our platform is designed with you in mind, offering intuitive navigation, secure transactions, and exceptional customer support. Whether you're a frequent concert-goer, movie enthusiast, or a traveler seeking convenient ticket booking solutions, we aim to provide you with the best-in-class service. Learn more about our mission to simplify ticket booking and enhance your overall experience.
+             </p>
+        </section>
+     <section id="contact">
+            <h2>Contact Us</h2>
+            <p>get in touch with us if you have any queries or need support reagarding your bookings</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@college.edu</p>
+            <p>Website: www.college.edu</p>
+        </section>
+    </main>
+</body>
+</html>
+
+
