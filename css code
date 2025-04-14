@@ -1,0 +1,120 @@
+Css code:
+<style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom:400px;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQewykkea2GjlPG_K3cA0TGysVsGfSVqyaIxw&s');
+background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center;
+    background-size: cover; /* Center the image */
+    background-attachment: fixed;
+}
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding:20px;
+    margin-bottom:20px;
+}
+nav{
+    text-align: center;
+    margin-bottom:20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    font: size 200px;
+    text-align:center;
+    background-color:black;
+    margin-left: 25px;
+    margin-right:25px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li button {
+    background:#333;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+main {
+    padding: 20px;
+}
+section {
+    display: none;
+    padding: 30px;
+    max-width:800px;
+    margin-left:300px;
+    border-radius:8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    line-height: 200%;
+}
+section.active {
+    display:block;
+}
+section#home {
+    background-color: #ffebcd;/* Fallback background color */
+   }
+section#events {
+    background-color: #f0e68c;/* Fallback background color */
+}
+section#aboutus {
+    background-color: #98fb98;
+}
+section#registration {
+    background-color: #afeeee;
+}
+section#contact {
+ background-color: #dda0dd;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form label {
+    margin: 10px 0 5px 0;
+    font-weight:bold;
+    margin-bottom:8px;
+    display:block;
+}
+form input, form select {
+    margin-bottom: 15px
+padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+input[type=text],input[type=number],select{
+    width:100%;
+    padding: 12px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px;
+border:none;
+    border-radius: 4px;
+    cursor:pointer;
+    width:100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+</style>
+
+
