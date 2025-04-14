@@ -1,0 +1,19 @@
+Javascripts code:
+<script>
+        function showSection(sectionId) {
+    const sections = document.querySelectorAll('main section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(sectionId).classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSection('home'); // Show the home section by default
+});
+ document.querySelector('#registration form').addEventListener('submit',(e)=>{
+    e.preventDefault();
+    document.querySelector('.success-message').style.display='block';
+ });
+</script>	
+ 
